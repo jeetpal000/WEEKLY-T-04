@@ -1,0 +1,339 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* font-family:"Poppins", sans-serif; */
+}
+body {
+    background: #e1dfdf;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:25px;
+    background-color: #333;
+    color: #fff;
+    position:fixed;
+    z-index: 5;
+    width: 100%;
+    /* max-width: 1400px; */
+    margin: 0 auto;
+    text-wrap: wrap;
+    overflow-x: auto;
+    transition: background-color 0.3s ease;
+  }
+  
+
+  
+  .logo a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 25px;
+  }
+  
+  .nav-menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  .nav-menu li {
+    margin-right: 50px;
+    text-transform: uppercase;
+    padding: 20px;
+    
+ 
+  }
+  
+  .nav-menu a {
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  .nav-menu a:hover {
+    color: #eae6e6; 
+  }  
+
+.Homepage {
+    background: url("https://koa.com/blog/images/family-camping-at-sunset.jpg?preset=heroimagecropped");
+    width: 100%;
+    height:100vh;
+    position: relative;
+    background-position: center 100%;
+    padding-top: 30px ;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+.Homepage::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.2);
+  }
+.Homepage .content {
+    display: flex;
+    justify-content: space-between;
+    height: 85%;
+    z-index: 5;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+.Homepage .content h1 {
+    font-size: 5rem;
+    color: #fff;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+    padding: 20px 0px;
+    font-weight: 800;
+   margin-bottom:  10px;
+   max-width: 100%;
+   text-wrap: wrap;
+   display: flex;
+    
+}
+.Homepage .content p {
+    color: white;
+    font-size: 2.2rem;
+    text-align:center;
+    text-wrap: wrap;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    max-width: 80%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+}
+.content a {
+    color: #000;
+    display: block;
+    text-decoration: none;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    margin: 0 10px;
+    padding: 10px 20px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
+    border: 2px solid #fff;
+    transition: 0.3s ease;
+
+}
+.content a:hover {
+    color: #fff;
+    background: rgba(255, 255, 255, 0.1)
+}
+section {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 80px 0 0;
+  }
+  
+  section h2 {
+    font-size: 2rem;
+  }
+  
+  section > p {
+    text-align: center;
+  }
+  
+  section .cards {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin-top: 50px;
+    padding: 0 10px;
+    justify-content: space-between;
+  }
+  
+  section.about {
+    margin: 0 auto;
+    max-width: 1200px;
+  }
+  
+  .about .company-info {
+    margin-top: 30px;
+  }
+  
+  .about h3 {
+    margin: 30px 0 10px;
+  }
+  
+  .about .team {
+    text-align: left;
+    width: 100%;
+  }
+  
+  .about .team ul {
+    padding-left: 20px;
+  }
+  
+  section .cards .card {
+    background: #fff;
+    padding: 40px 15px;
+    list-style: none;
+    border-radius: 5px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.04);
+    margin-bottom: 40px;
+    width: calc(100% / 3 - 30px);
+    text-align: center;
+  }
+  
+  .portfolio .cards .card {
+    padding: 0 0 20px;
+  }
+  
+  .services .card img {
+    width: 120px;
+    height: 120px;
+    margin-bottom: 20px;
+    border-radius: 100%;
+    object-fit: cover;
+  }
+  
+  .portfolio .card img {
+    width: 100%;
+    padding-bottom: 10px;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    border-radius: 7px;
+  }
+  
+  .cards .card p {
+    padding: 0 15px;
+    margin-top: 5px;
+  }
+  
+  .about .row {
+    padding: 0 10px;
+  }
+  
+  .contact .row {
+    margin: 60px 0 90px;
+    display: flex;
+    max-width: 1200px;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .contact .row .col {
+    padding: 0 10px;
+    width: calc(100% / 2 - 50px);
+  }
+  
+  .contact .col p {
+    margin-bottom: 10px;
+  }
+  
+  .contact .col p i {
+    color: #7a7a7a;
+    margin-right: 10px;
+  }
+  
+  .contact form input {
+    height: 45px;
+    margin-bottom: 20px;
+    padding: 10px;
+    width: 100%;
+    font-size: 16px;
+    outline: none;
+    border: 1px solid #bfbfbf;
+  }
+  
+  .contact form textarea {
+    padding: 10px;
+    width: 100%;
+    font-size: 16px;
+    height: 150px;
+    outline: none;
+    resize: vertical;
+    border: 1px solid #bfbfbf;
+  }
+  
+  .contact form button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 17px;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    background: #333;
+    transition: 0.2s ease;
+  }
+  
+  .contact form button:hover {
+    background: #525252;
+  }
+  
+  footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background: #000;
+    padding: 20px 0;
+  }
+  
+  footer div {
+    padding: 0 10px;
+    max-width: 1200px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+
+  
+  @media screen and (max-width: 860px) {
+    .navbar .all-links {
+      position: fixed;
+      left: -100%;
+      width: 300px;
+      display: block;
+      height: 100vh;
+      top: 75px;
+      background: #333;
+      transition: left 0.3s ease;
+    }
+  
+  
+  
+    .navbar .all-links li {
+      font-size: 18px;
+    }
+
+
+  
+    .homepage .content .text {
+      font-size: 17px;
+    }
+  
+    .content a {
+      font-size: 37px;
+      padding: 9px 20px;
+    }
+  
+
+  
+    .contact .row .col:last-child {
+      margin-top: 40px;
+    }
+  
+    
+  }
+  
+  @media screen and (max-width: 550px) {
+    section .cards .card {
+      width: 100%;
+      margin-bottom: 30px;
+    }
+  }
